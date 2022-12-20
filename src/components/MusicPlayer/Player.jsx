@@ -21,6 +21,7 @@ const Player = ({ activeSong, isPlaying, volume, seekTime, onEnded, onTimeUpdate
   }, [seekTime]);
 
   return (
+    
     <audio
       src={activeSong?.hub?.actions[1]?.uri}
       ref={ref}
